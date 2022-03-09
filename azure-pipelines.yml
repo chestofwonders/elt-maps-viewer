@@ -18,7 +18,7 @@ stages:
         - task: NodeTool@0
           displayName: 'Install Node.js'
           inputs:
-            versionSpec: '14.x'
+            versionSpec: '10.x'
             checkLatest: true
         - script: |
             npm install

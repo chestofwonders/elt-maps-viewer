@@ -16,11 +16,11 @@
       "module": "commonjs",
       "moduleResolution": "node",
       "resolveJsonModule": true,
-      "declaration": true,
+      "declaration": false,
       "isolatedModules": true,
       "noEmit": false,
       "baseUrl": "./src",
-      "outDir": "./dist"
+      "outDir": "./lib"
     },
     "include": [
       "src/**/*"

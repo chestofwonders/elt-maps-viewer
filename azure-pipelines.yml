@@ -31,7 +31,7 @@ stages:
     steps:
     - task: AzureStaticWebApp@0
       inputs:
-        app_location: '/'
+        app_location: '/dist'
         output_location: '/dist'
       env:
-        azure_static_web_apps_api_token: $(token)
+        azure_static_web_apps_api_token: $(deployment_token)

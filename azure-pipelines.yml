@@ -24,3 +24,14 @@ stages:
             npm install
             npm run build
           displayName: 'npm install and build'
+          
+- stage: Deploy
+  jobs:
+  - job: B1
+    steps:
+    - task: AzureStaticWebApp@0
+      inputs:
+        app_location: '/'
+        output_location: '/dist'
+      env:
+        azure_static_web_apps_api_token: $(token)

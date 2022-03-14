@@ -4,7 +4,8 @@
       "lib": [
         "dom",
         "dom.iterable",
-        "esnext"
+        "esnext",
+        "es6"
       ],
       "allowJs": true,
       "skipLibCheck": true,
@@ -16,7 +17,8 @@
       "module": "commonjs",
       "moduleResolution": "node",
       "resolveJsonModule": true,
-      "declaration": false,
+      "removeComments": true,
+      "declaration": true,
       "isolatedModules": true,
       "noEmit": false,
       "baseUrl": "./src",

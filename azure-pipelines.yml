@@ -21,6 +21,18 @@ stages:
             versionSpec: '14.x'
             checkLatest: true
         - script: |
+            npm install -g webpack webpack-cli --save-dev
             npm install
             npm run build
-          displayName: 'npm install and build'
+          displayName: 'npm install, run webpack'
+          
+- stage: Deploy
+  jobs:
+  - job: B1
+    steps:
+    - task: AzureStaticWebApp@0
+      inputs:
+        app_location: '/'
+        output_location: '/dist'
+      env:
+        azure_static_web_apps_api_token: $(deployment_token)

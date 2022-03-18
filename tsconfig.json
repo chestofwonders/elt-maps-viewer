@@ -18,8 +18,8 @@
       "moduleResolution": "node",
       "resolveJsonModule": true,
       "removeComments": true,
-      "declaration": true,
-      "isolatedModules": true,
+      "declaration": false,
+      "isolatedModules": false,
       "noEmit": false,
       "baseUrl": "./src",
       "outDir": "./lib"

@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: "index.js",
         path: path.resolve(__dirname, "dist"),
-        clean: true,
+        clean: true
     },
     module: {
         rules: [
@@ -23,6 +23,10 @@ module.exports = {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
             },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                type: "asset",
+            }
         ],
     },
     resolve: {

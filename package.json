@@ -5,6 +5,7 @@
     "files": [
         "/lib/*"
     ],
+    "main": "./lib/elt-maps-viewer.js",
     "scripts": {
         "lint": "eslint . --ext .ts",
         "lint.fix": "eslint . --ext .ts --fix",
@@ -33,6 +34,7 @@
         "@maplibre/maplibre-gl-leaflet": "0.0.15",
         "copy-webpack-plugin": "^9.0.1",
         "leaflet": "^1.7.1",
+        "lit": "^2.2.1",
         "maplibre-gl": "^1.15.2"
     },
     "devDependencies": {
@@ -44,6 +46,7 @@
         "eslint": "^8.10.0",
         "html-loader": "^3.1.0",
         "html-webpack-plugin": "^5.5.0",
+        "lit-element": "^3.2.0",
         "prettier": "^2.2.1",
         "style-loader": "^3.3.1",
         "ts-loader": "^9.2.7",

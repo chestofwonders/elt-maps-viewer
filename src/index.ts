@@ -1,8 +1,8 @@
 import 'leaflet/dist/leaflet.css';
 import './styles/main.css';
 //import icon from './assets/images/favico.png';
-import { Map } from './classes/Map';
-import { POI, POIOptions, PopUp } from './classes/POI';
+import { Map } from './classes';
+import { POI, POIOptions, PopUp } from './classes';
 //import { Marker, popup } from 'leaflet';
 
 const myMap = new Map('map', [40.433531, -3.6953617], 17);

@@ -31,7 +31,22 @@ class Map {
 
     public addPOI = (poi: POI) => {
         const newMap: L.Map = this._map;
-        const newMarker: L.Marker = new Marker(poi.getLatlng());
+        const newMarker: L.Marker = new Marker(
+            poi.getLatlng(),
+            poi.getOptions()
+        );
+
+        if (poi.getPopUp()?.content) {
+            const newPopup: L.Popup = new L.Popup({
+                className: <string>poi.getPopUp()?.className
+            });
+
+            newPopup.setContent(<string>poi.getPopUp()?.content);
+            newPopup.setLatLng(poi.getLatlng());
+
+            newMarker.bindPopup(newPopup).openPopup();
+        }
+
         newMarker.addTo(newMap);
     };
 }

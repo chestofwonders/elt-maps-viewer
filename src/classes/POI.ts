@@ -8,16 +8,16 @@ import {
 
 export type POIOptions = MarkerOptions & {
     icon?: Icon;
-    keyboard?: Boolean;
-    title?: String;
-    alt?: String;
-    zIndexOffset?: Number;
-    opacity?: Number;
-    riseOnHover?: Boolean;
-    riseOffset?: Number;
-    pane?: String;
-    shadowPane?: String;
-    bubblingMouseEvents?: Boolean;
+    keyboard?: boolean;
+    title?: string;
+    alt?: string;
+    zIndexOffset?: number;
+    opacity?: number;
+    riseOnHover?: boolean;
+    riseOffset?: number;
+    pane?: string;
+    shadowPane?: string;
+    bubblingMouseEvents?: boolean;
 };
 
 export type PopUp = {

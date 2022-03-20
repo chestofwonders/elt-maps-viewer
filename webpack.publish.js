@@ -5,6 +5,7 @@ const baseConfig = require("./webpack.config.js");
 
 module.exports = merge(baseConfig, {
   mode: "production",
+  entry: "./src/classes/index.ts",
   output: {
     filename: "elt-maps-viewer.js",
     path: path.resolve(__dirname, "lib"),
